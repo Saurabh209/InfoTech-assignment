@@ -1,0 +1,61 @@
+.yourResume-main-container{
+height: 95vh;
+max-height: 760px;
+ background: linear-gradient(to right, #FFBFCA, #FFE7EB);
+
+ .yourResume-inner-container{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    .inner-container-text{
+        height: 95vh;
+        max-height: 760px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 48%;
+        gap: 38px;
+        border: 1px solid black;
+        header{
+            .yourResume-headingAndUnderline{
+                position:relative ;
+            }
+            img{
+                position: absolute;
+                top: 69px;
+            }
+            h1{
+                font-size: 64px;
+                font-weight: 700;
+                line-height: 84px;
+                text-wrap: nowrap;
+                span{
+                    color: red;
+                }
+            }
+        }
+         .yourResume-paragraph-container{
+            max-width: 78%;
+    p{
+        font-size: 16px;
+        line-height: 34px;
+    }
+ }
+    }
+        .inner-container-image{
+        height: 95vh;
+        max-height: 760px;
+        width: 48%;
+        border: 1px solid black;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        img{
+            height: 80%;
+        }
+    }
+ }
+
+}
