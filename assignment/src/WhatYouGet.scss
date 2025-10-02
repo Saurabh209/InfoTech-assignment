@@ -1,0 +1,194 @@
+.what-you-get-main-contianer {
+
+
+    width: 86%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    .container-one {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 26px;
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            font-size: 18px;
+            background-color: #FEDEE4;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        h2 {
+
+            font-weight: 600;
+        }
+    }
+
+
+
+    .container-two {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 20px;
+            box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
+            border-radius: 20px;
+
+            .card-upper-section {
+
+                display: flex;
+                flex-direction: column;
+
+                gap: 18px;
+
+                .card-upper-section-image-container {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+
+                        margin: 20px;
+                    }
+
+                }
+
+                div {
+
+
+                    p {
+                        text-align: start;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
+            }
+
+            .card-lower-section {
+                p {
+                    font-size: 18px;
+                    line-height: 30px;
+                    font-weight: 400
+                }
+            }
+        }
+
+    }
+}
+
+@media(max-width:1370px) {
+.what-you-get-main-contianer {
+
+    .container-one {
+        button {
+
+        }
+
+        h2 {
+
+        }
+    }
+
+
+
+    .container-two {
+        grid-template-columns: repeat(2, 1fr);
+
+        .card {
+
+            .card-upper-section {
+
+
+                .card-upper-section-image-container {
+
+
+                    img {
+
+                    }
+
+                }
+
+                div {
+
+
+                    p {
+
+                    }
+                }
+            }
+
+            .card-lower-section {
+                p {
+
+                }
+            }
+        }
+
+    }
+}
+
+}
+@media(max-width:700px) {
+.what-you-get-main-contianer {
+
+    .container-one {
+        button {
+
+        }
+
+        h2 {
+
+        }
+    }
+
+
+
+    .container-two {
+        grid-template-columns: repeat(1, 1fr);
+
+        .card {
+
+            .card-upper-section {
+
+
+                .card-upper-section-image-container {
+
+
+                    img {
+
+                    }
+
+                }
+
+                div {
+
+
+                    p {
+
+                    }
+                }
+            }
+
+            .card-lower-section {
+                p {
+
+                }
+            }
+        }
+
+    }
+}
+
+}
