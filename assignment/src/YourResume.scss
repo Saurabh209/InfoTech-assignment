@@ -1,61 +1,421 @@
-.yourResume-main-container{
-height: 95vh;
-max-height: 760px;
- background: linear-gradient(to right, #FFBFCA, #FFE7EB);
+.yourResume-main-container {
+  //   max-height: 760px;
+  background: linear-gradient(to right, #ffbfca, #ffe7eb);
 
- .yourResume-inner-container{
-    width: 85%;
+  .yourResume-inner-container {
+    width: 86%;
     margin: 0 auto;
     display: flex;
-    align-items: center;
-    border: 1px solid black;
-    .inner-container-text{
-        height: 95vh;
-        max-height: 760px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 48%;
-        gap: 38px;
-        border: 1px solid black;
-        header{
-            .yourResume-headingAndUnderline{
-                position:relative ;
-            }
-            img{
-                position: absolute;
-                top: 69px;
-            }
-            h1{
-                font-size: 64px;
-                font-weight: 700;
-                line-height: 84px;
-                text-wrap: nowrap;
-                span{
-                    color: red;
-                }
-            }
-        }
-         .yourResume-paragraph-container{
-            max-width: 78%;
-    p{
-        font-size: 16px;
-        line-height: 34px;
-    }
- }
-    }
-        .inner-container-image{
-        height: 95vh;
-        max-height: 760px;
-        width: 48%;
-        border: 1px solid black;
-        display: flex;
-        align-items: end;
-        justify-content: end;
-        img{
-            height: 80%;
-        }
-    }
- }
+    justify-content: space-between;
 
+    .inner-container-text {
+      //   height: 95vh;
+      //   max-height: 760px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 48%;
+      gap: 38px;
+      header {
+        .yourResume-headingAndUnderline {
+          position: relative;
+        }
+        img {
+          position: absolute;
+          top: 69px;
+        }
+        h1 {
+          font-size: 64px;
+          font-weight: 700;
+          line-height: 84px;
+          text-wrap: nowrap;
+          span {
+            color: red;
+          }
+        }
+      }
+      .yourResume-paragraph-container {
+        max-width: 79%;
+        p {
+          font-size: 16px;
+          line-height: 34px;
+        }
+      }
+      .yourResume-button-container {
+        display: flex;
+        gap: 24px;
+        .resume-package {
+          cursor: pointer;
+          font-size: 18px;
+          font-weight: 600;
+          border: 1px solid red;
+          box-shadow: 0px 0px 12px rgba(250, 18, 57, 0.58);
+          color: red;
+          padding: 14px 22px;
+          border-radius: 30px;
+          transition-duration: 0.3s;
+          &:hover {
+            box-shadow: 0px 0px 16px rgba(250, 18, 57, 0.88);
+          }
+        }
+        .contact-us {
+          cursor: pointer;
+          font-size: 18px;
+          font-weight: 600;
+          border: 1px solid red;
+          box-shadow: 0px 0px 12px rgba(250, 18, 57, 0.58);
+          color: rgb(255, 255, 255);
+          background-color: red;
+          padding: 14px 22px;
+          border-radius: 30px;
+          transition-duration: 0.3s;
+          &:hover {
+            box-shadow: 0px 0px 16px rgba(250, 18, 57, 0.88);
+          }
+        }
+      }
+    }
+    .inner-container-image {
+      position: relative;
+      //   height: 95vh;
+      //   max-height: 760px;
+      width: 48%;
+
+      display: flex;
+      align-items: end;
+      justify-content: end;
+      img {
+        height: 88%;
+      }
+      .rating {
+        display: flex;
+        gap: 20px;
+        border-radius: 10px;
+        padding: 20px 15px;
+        position: absolute;
+        bottom: 175px;
+        right: 47%;
+        width: 320px;
+        background-color: white;
+        .rating-number {
+          p {
+            color: #1cb098;
+            font-size: 64px;
+            font-weight: 600;
+          }
+        }
+        .rating-text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 11px;
+          .rating-text-star {
+            img {
+              margin-right: 2px;
+            }
+          }
+          .rating-text-text {
+            p {
+              font-size: 24px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      .resume-created {
+        position: absolute;
+        display: flex;
+        gap: 20px;
+        border-radius: 10px;
+        padding: 20px 15px;
+        position: absolute;
+        bottom: 35px;
+        right: 0%;
+        width: 230px;
+        background-color: white;
+        .resume-created-logo {
+          img {
+            height: 80px;
+            width: 80px;
+          }
+        }
+        .resume-creted-other-container {
+          display: flex;
+          flex-direction: column;
+          .resume-created-number {
+            p {
+              font-size: 30px;
+              font-weight: 800;
+            }
+          }
+          .resume-created-text {
+            p {
+              font-size: 17px;
+              font-weight: 500;
+              color: #666666;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1330px) {
+  .yourResume-main-container {
+    .yourResume-inner-container {
+      .inner-container-text {
+        header {
+          .yourResume-headingAndUnderline {
+          }
+          img {
+            position: absolute;
+            top: 69px;
+          }
+          h1 {
+            font-size: 54px;
+            font-weight: 700;
+            line-height: 78px;
+            text-wrap: nowrap;
+            span {
+              color: red;
+            }
+          }
+        }
+        .yourResume-paragraph-container {
+          p {
+          }
+        }
+        .yourResume-button-container {
+          .resume-package {
+          }
+          .contact-us {
+          }
+        }
+      }
+      .inner-container-image {
+        img {
+          height: 80%;
+        }
+        .rating {
+          width: 300px;
+
+          .rating-number {
+            p {
+              font-size: 54px;
+            }
+          }
+          .rating-text {
+            .rating-text-star {
+              img {
+              }
+            }
+            .rating-text-text {
+              p {
+                font-size: 22px;
+              }
+            }
+          }
+        }
+        .resume-created {
+          padding: 20px 15px;
+          bottom: 30px;
+          right: 0%;
+          width: 200px;
+
+          .resume-created-logo {
+            img {
+              height: 60px;
+              width: 60px;
+            }
+          }
+          .resume-creted-other-container {
+            .resume-created-number {
+              p {
+                font-size: 26px;
+              }
+            }
+            .resume-created-text {
+              p {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .yourResume-main-container {
+    .yourResume-inner-container {
+      .inner-container-text {
+        gap: 28px;
+        header {
+          .yourResume-headingAndUnderline {
+          }
+          img {
+            top: 55px;
+            max-width: 280px;
+          }
+          h1 {
+            font-size: 44px;
+            line-height: 65px;
+            span {
+              color: red;
+            }
+          }
+        }
+        .yourResume-paragraph-container {
+          p {
+          }
+        }
+        .yourResume-button-container {
+          .resume-package {
+          }
+          .contact-us {
+          }
+        }
+      }
+      .inner-container-image {
+        img {
+          height: 80%;
+        }
+        .rating {
+          width: 300px;
+
+          .rating-number {
+            p {
+              font-size: 54px;
+            }
+          }
+          .rating-text {
+            .rating-text-star {
+              img {
+              }
+            }
+            .rating-text-text {
+              p {
+                font-size: 22px;
+              }
+            }
+          }
+        }
+        .resume-created {
+          padding: 20px 15px;
+          bottom: 30px;
+          right: 0%;
+          width: 200px;
+
+          .resume-created-logo {
+            img {
+              height: 60px;
+              width: 60px;
+            }
+          }
+          .resume-creted-other-container {
+            .resume-created-number {
+              p {
+                font-size: 26px;
+              }
+            }
+            .resume-created-text {
+              p {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  .yourResume-main-container {
+    .yourResume-inner-container {
+      flex-direction: column;
+      .inner-container-text {
+        gap: 28px;
+        width: 100%;
+        header {
+          .yourResume-headingAndUnderline {
+          }
+          img {
+            top: 55px;
+            max-width: 280px;
+          }
+          h1 {
+            font-size: 44px;
+            line-height: 65px;
+            span {
+              color: red;
+            }
+          }
+        }
+        .yourResume-paragraph-container {
+          p {
+          }
+        }
+        .yourResume-button-container {
+          .resume-package {
+          }
+          .contact-us {
+          }
+        }
+      }
+      .inner-container-image {
+        width: 100%;
+        img {
+           max-width: 400px;
+        }
+        .rating {
+          width: 300px;
+
+          .rating-number {
+            p {
+              font-size: 54px;
+            }
+          }
+          .rating-text {
+            .rating-text-star {
+              img {
+              }
+            }
+            .rating-text-text {
+              p {
+                font-size: 22px;
+              }
+            }
+          }
+        }
+        .resume-created {
+          padding: 20px 15px;
+          bottom: 30px;
+          right: 0%;
+          width: 200px;
+
+          .resume-created-logo {
+            img {
+              height: 60px;
+              width: 60px;
+            }
+          }
+          .resume-creted-other-container {
+            .resume-created-number {
+              p {
+                font-size: 26px;
+              }
+            }
+            .resume-created-text {
+              p {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
