@@ -25,11 +25,11 @@ const YourResume = () => {
                     </div>
                     <div className='yourResume-button-container'>
                         <button className='resume-package'>
-                            Resume Package
+                            RESUME PACKAGE
                         </button>
 
                         <button className='contact-us'>
-                            Contact Us
+                            CONTACT US
                         </button>
                     </div>
                 </div>
