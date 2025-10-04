@@ -1,4 +1,122 @@
-.navbar{
-    background-color: white;
-    min-height: 80px;
+a{
+  text-decoration: none;
+}
+.navbar {
+  background-color: white;
+  //   min-height: 80px;
+  padding: 10px 0px;
+  width: 86%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  .navbar-logo-container {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-links-container {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  
+
+    div {
+ 
+      p {
+ 
+        text-wrap: nowrap;
+        font-size: 18px;
+        font-weight: 500;
+        color: #282828;
+        transition-duration: .3s;
+        &:hover{
+        color: red;
+        transform: translateY(-2px);
+        }
+      }
+    }
+  }
+  .navbar-button-container {
+    display: flex;
+    align-items: center;
+
+    button {
+      cursor: pointer;
+      text-wrap: nowrap;
+      font-size: 18px;
+      font-weight: 500;
+      border: 1px solid red;
+      box-shadow: 0px 0px 12px rgba(250, 18, 57, 0.58);
+      color: rgb(255, 255, 255);
+      background-color: red;
+      padding: 14px 22px;
+      border-radius: 30px;
+      transition-duration: 0.3s;
+      &:hover {
+        box-shadow: 0px 0px 16px rgba(250, 18, 57, 0.88);
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    .navbar-logo-container {
+      img {
+        max-width: 200px;
+      }
+    }
+    .navbar-links-container {
+      div {
+        p {
+        }
+      }
+    }
+    .navbar-button-container {
+      button {
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    .navbar-logo-container {
+      img {
+      }
+    }
+    .navbar-links-container {
+      display: none;
+      div {
+        p {
+        }
+      }
+    }
+    .navbar-button-container {
+      button {
+        padding: 8px 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    .navbar-logo-container {
+      img {
+        max-width: 140px;
+      }
+    }
+    .navbar-links-container {
+      display: none;
+      div {
+        p {
+        }
+      }
+    }
+    .navbar-button-container {
+      button {
+        font-size: 12px;
+      }
+    }
+  }
 }

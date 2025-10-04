@@ -4,7 +4,7 @@ import './App.css'
 import WhatYouGet from './WhatYouGet'
 import YourResume from './YourResume'
 import Navbar from './Navbar'
-
+import { BrowserRouter } from 'react-router-dom'
 function App() {
 
   return (
